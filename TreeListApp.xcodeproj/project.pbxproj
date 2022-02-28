@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0AB11D9727C8D47200EA3149 /* TreeListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB11D9627C8D47200EA3149 /* TreeListAppApp.swift */; };
-		0AB11D9927C8D47200EA3149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB11D9827C8D47200EA3149 /* ContentView.swift */; };
+		0AB11D9927C8D47200EA3149 /* ListTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB11D9827C8D47200EA3149 /* ListTreeView.swift */; };
 		0AB11D9B27C8D47300EA3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB11D9A27C8D47300EA3149 /* Assets.xcassets */; };
 		0AB11D9E27C8D47300EA3149 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB11D9D27C8D47300EA3149 /* Preview Assets.xcassets */; };
+		0AEB3A5327C96C0900E8E68B /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB3A5227C96C0900E8E68B /* Tree.swift */; };
+		0AEB3A5527C96C3300E8E68B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB3A5427C96C3300E8E68B /* ApiManager.swift */; };
+		0AEB3A5727C96C6100E8E68B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB3A5627C96C6100E8E68B /* Localizable.strings */; };
+		0AEB3A5927C96C6C00E8E68B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB3A5827C96C6C00E8E68B /* Constants.swift */; };
+		0AEB3A5B27C96CF100E8E68B /* TreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB3A5A27C96CF100E8E68B /* TreeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AB11D9327C8D47200EA3149 /* TreeListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB11D9627C8D47200EA3149 /* TreeListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeListAppApp.swift; sourceTree = "<group>"; };
-		0AB11D9827C8D47200EA3149 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AB11D9827C8D47200EA3149 /* ListTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTreeView.swift; sourceTree = "<group>"; };
 		0AB11D9A27C8D47300EA3149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AB11D9D27C8D47300EA3149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AEB3A5227C96C0900E8E68B /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		0AEB3A5427C96C3300E8E68B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		0AEB3A5627C96C6100E8E68B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0AEB3A5827C96C6C00E8E68B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AEB3A5A27C96CF100E8E68B /* TreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,15 +61,12 @@
 		0AB11D9527C8D47200EA3149 /* TreeListApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AB11DA627C8D4BA00EA3149 /* Api */,
 				0AB11DAA27C8D4E800EA3149 /* ViewModels */,
 				0AB11DA927C8D4E100EA3149 /* Views */,
 				0AB11DA827C8D4D400EA3149 /* Ressources */,
 				0AB11DA727C8D4C100EA3149 /* Models */,
-				0AB11DA627C8D4BA00EA3149 /* Api */,
 				0AB11D9627C8D47200EA3149 /* TreeListAppApp.swift */,
-				0AB11D9827C8D47200EA3149 /* ContentView.swift */,
-				0AB11D9A27C8D47300EA3149 /* Assets.xcassets */,
-				0AB11D9C27C8D47300EA3149 /* Preview Content */,
 			);
 			path = TreeListApp;
 			sourceTree = "<group>";
@@ -75,6 +82,7 @@
 		0AB11DA627C8D4BA00EA3149 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB3A5427C96C3300E8E68B /* ApiManager.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -82,6 +90,7 @@
 		0AB11DA727C8D4C100EA3149 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB3A5227C96C0900E8E68B /* Tree.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +98,10 @@
 		0AB11DA827C8D4D400EA3149 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				0AB11D9C27C8D47300EA3149 /* Preview Content */,
+				0AB11D9A27C8D47300EA3149 /* Assets.xcassets */,
+				0AEB3A5627C96C6100E8E68B /* Localizable.strings */,
+				0AEB3A5827C96C6C00E8E68B /* Constants.swift */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 		0AB11DA927C8D4E100EA3149 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AB11D9827C8D47200EA3149 /* ListTreeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +117,7 @@
 		0AB11DAA27C8D4E800EA3149 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB3A5A27C96CF100E8E68B /* TreeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB11D9E27C8D47300EA3149 /* Preview Assets.xcassets in Resources */,
+				0AEB3A5727C96C6100E8E68B /* Localizable.strings in Resources */,
 				0AB11D9B27C8D47300EA3149 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB11D9927C8D47200EA3149 /* ContentView.swift in Sources */,
+				0AEB3A5927C96C6C00E8E68B /* Constants.swift in Sources */,
+				0AEB3A5527C96C3300E8E68B /* ApiManager.swift in Sources */,
+				0AEB3A5327C96C0900E8E68B /* Tree.swift in Sources */,
+				0AB11D9927C8D47200EA3149 /* ListTreeView.swift in Sources */,
+				0AEB3A5B27C96CF100E8E68B /* TreeViewModel.swift in Sources */,
 				0AB11D9727C8D47200EA3149 /* TreeListAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TreeListApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TreeListApp/Ressources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -336,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TreeListApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TreeListApp/Ressources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
