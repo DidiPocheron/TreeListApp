@@ -21,8 +21,6 @@ class TreeViewModel: ObservableObject {
         case .success(let response):
             DispatchQueue.main.async {
                 self.trees = response.records
-                print(self.trees)
-                print(self.trees.count)
                 self.dataLoaded = true
             }
         case .failure(let error):

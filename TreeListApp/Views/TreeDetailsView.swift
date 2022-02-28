@@ -10,6 +10,12 @@ import SwiftUI
 struct TreeDetailsView: View {
     let tree: Tree
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 5){
+            Text(tree.species!)
+            Text("\(String(tree.height!))m")
+            Text("\(String(tree.circumference!))cm")
+            Text(tree.address!)
+        }
+        .navigationTitle(tree.name!)
     }
 }
