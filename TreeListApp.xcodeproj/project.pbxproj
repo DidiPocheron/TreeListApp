@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AAA119827CCD4AD00678396 /* TreeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA119727CCD4AD00678396 /* TreeDetailsView.swift */; };
+		0AAA119B27CCD88600678396 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA119A27CCD88600678396 /* TreeItem.swift */; };
 		0AB11D9727C8D47200EA3149 /* TreeListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB11D9627C8D47200EA3149 /* TreeListAppApp.swift */; };
 		0AB11D9927C8D47200EA3149 /* ListTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB11D9827C8D47200EA3149 /* ListTreeView.swift */; };
 		0AB11D9B27C8D47300EA3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB11D9A27C8D47300EA3149 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AAA119727CCD4AD00678396 /* TreeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDetailsView.swift; sourceTree = "<group>"; };
+		0AAA119A27CCD88600678396 /* TreeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeItem.swift; sourceTree = "<group>"; };
 		0AB11D9327C8D47200EA3149 /* TreeListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB11D9627C8D47200EA3149 /* TreeListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeListAppApp.swift; sourceTree = "<group>"; };
 		0AB11D9827C8D47200EA3149 /* ListTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTreeView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AAA119927CCD87300678396 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA119A27CCD88600678396 /* TreeItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		0AB11D8A27C8D47200EA3149 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 		0AB11D9527C8D47200EA3149 /* TreeListApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AAA119927CCD87300678396 /* Components */,
 				0AB11DA627C8D4BA00EA3149 /* Api */,
 				0AB11DAA27C8D4E800EA3149 /* ViewModels */,
 				0AB11DA927C8D4E100EA3149 /* Views */,
@@ -110,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB11D9827C8D47200EA3149 /* ListTreeView.swift */,
+				0AAA119727CCD4AD00678396 /* TreeDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAA119B27CCD88600678396 /* TreeItem.swift in Sources */,
 				0AEB3A5927C96C6C00E8E68B /* Constants.swift in Sources */,
 				0AEB3A5527C96C3300E8E68B /* ApiManager.swift in Sources */,
+				0AAA119827CCD4AD00678396 /* TreeDetailsView.swift in Sources */,
 				0AEB3A5327C96C0900E8E68B /* Tree.swift in Sources */,
 				0AB11D9927C8D47200EA3149 /* ListTreeView.swift in Sources */,
 				0AEB3A5B27C96CF100E8E68B /* TreeViewModel.swift in Sources */,

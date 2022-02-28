@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 
 struct TreeList: Decodable, Encodable {
     let records: [Fields]
@@ -17,6 +16,7 @@ struct Fields: Decodable, Encodable {
 }
 
 struct Tree: Decodable, Encodable {
+    let placeId: String
     let name: String?
     let species: String?
     let height: Int16?
@@ -24,6 +24,7 @@ struct Tree: Decodable, Encodable {
     let address: String?
     
     enum CodingKeys: String, CodingKey {
+        case placeId = "idemplacement"
         case name = "libellefrancais"
         case species = "espece"
         case height = "hauteurenm"
